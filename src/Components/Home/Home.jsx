@@ -1,6 +1,8 @@
 import React from 'react'
 import Backgound from '../SharedComponents/Button/Backgound'
-const Home = ({bgUrl}) => {
+import Header from './Header/Header'
+import Container from '../SharedComponents/Container'
+const Home = () => {
   return (
     <>
       {/* ====add home backgound image===== */}
@@ -10,6 +12,11 @@ const Home = ({bgUrl}) => {
       </div> */}
       <Backgound src={"/../src/assets/Images/BackgoundImages/home-bg.png"} />
       {/* <Backgound src={"/../src/assets/Images/BackgoundImages/about-bg.jpg"} /> */}
+      <div className='z-20 relative my-[12rem]'>
+        <Container>
+        <Header />
+        </Container>
+      </div>
     </>
   )
 }
