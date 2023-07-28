@@ -19,3 +19,41 @@ html{
   color: #00d0ff;
   filter: drop-shadow(0 0 5px rgb(0, 183, 255));
 }
+
+
+:root {
+	--cards: 3;
+	--cardHeight: 87vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+  /* --cardMargin:40rem; */
+  /* --cards:3;
+	--cardHeight: 40vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw; */
+}
+
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+  transition:all .3s ease-in-out;
+}
+#cards:hover{
+  color: #00d0ff;
+  filter: drop-shadow(0 0 5px rgb(0, 183, 255));
+  cursor: pointer;
+}
+
+.card {
+	position: sticky;
+	top:8rem;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+  transition:all .3s ease-in-out;
+}

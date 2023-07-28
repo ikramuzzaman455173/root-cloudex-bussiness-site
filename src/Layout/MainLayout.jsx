@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import NavBar from '../Components/NavBar/NavBar'
 import Footer from '../Components/Footer/Footer'
-import ParticleBg from '../Components/PagePartiCles/ParticleBG'
+// import ParticleBg from '../Components/PagePartiCles/ParticleBG'
 const MainLayout = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const MainLayout = () => {
       </div>
       <Footer />
       <div className='relative z-[50]'>
-      <ParticleBg />
+      {/* <ParticleBg /> */}
       </div>
     </>
   )

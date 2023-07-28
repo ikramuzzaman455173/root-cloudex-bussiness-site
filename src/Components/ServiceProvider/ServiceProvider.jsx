@@ -35,7 +35,6 @@ const ServiceProvider = () => {
           {serviceCard?.map((item) => <ServiceCard key={item.id} item={item} />)}
 
 
-
         </div>
       </div>
     </>
