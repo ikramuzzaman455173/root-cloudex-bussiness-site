@@ -6,3 +6,9 @@ html{
   @apply  scrollbar-thin scrollbar-thumb-scroll-bar-c scrollbar-thumb-rounded  scrollbar-track-scroll-bar-track-c
 }
 
+.footer-heading{
+  @apply text-[18px] font-[500] text-white
+}
+.footer-link{
+  @apply flex items-center gap-2 my-4 text-[18px] text-[#0993C7] transition duration-300 hover:underline hover:decoration-[#6994DC] hover:decoration-solid hover:decoration-2 hover:underline-offset-8 hover:cursor-pointer
+}
