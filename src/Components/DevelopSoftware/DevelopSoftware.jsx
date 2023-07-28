@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect, useState } from 'react'
 
 const DevelopSoftware = () => {
   const cardData = [
@@ -41,74 +41,107 @@ const DevelopSoftware = () => {
     {
       id: 7,
       title: "Maintenance",
-      descruption: "Provide ongoing maintenance and support for the system.",
+      description: "Provide ongoing maintenance and support for the system.",
       imageUrl: "/src/assets/Images/softwareDevelopSectionImg/softwareImg-7.png",
     },
     // Add more objects here for additional cards
   ];
 
   const [selectTab, setSelectTab] = useState('Requirement')
+  const [softwareCardData, setSoftwareCardData] = useState([])
   useEffect(() => {
     if (selectTab === 'Requirement') {
-      setPortfolio(data)
+      const cardDatas = cardData?.filter(item => item.title === 'Requirement')
+      setSoftwareCardData(cardDatas)
     }
     if (selectTab === 'Analysis') {
-      const filterData = data?.filter(item => item.title === 'Analysis')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Analysis')
+      setSoftwareCardData(cardDatas)
     }
 
     if (selectTab === 'Design') {
-      const filterData = data?.filter(item => item.title === 'Design')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Design')
+      setSoftwareCardData(cardDatas)
     }
     if (selectTab === 'Coding') {
-      const filterData = data?.filter(item => item.title === 'Coding')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Coding')
+      setSoftwareCardData(cardDatas)
     }
     if (selectTab === 'Testing') {
-      const filterData = data?.filter(item => item.title === 'Testing')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Testing')
+      setSoftwareCardData(cardDatas)
     }
 
     if (selectTab === 'Development') {
-      const filterData = data?.filter(item => item.title === 'Development')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Development')
+      setSoftwareCardData(cardDatas)
     }
     if (selectTab === 'Maintenance') {
-      const filterData = data?.filter(item => item.title === 'Maintenance')
-      setPortfolio(filterData)
+      const cardDatas = cardData?.filter(item => item.title === 'Maintenance')
+      setSoftwareCardData(cardDatas)
     }
 
   }, [selectTab])
 
   return (
-    <div className='bg-[#020A1C] w-full h-screen'>
+    <div className='bg-[#020A1C] bg-center bg-cover w-full relative h-[100%] bg-[url("https://www.thebrightfuture.co/static/media/RqBg.f5971d63dd1776f5318e.png")]'>
+      <div className='bg-[#080F28] opacity-[0.7] absolute'></div>
       {/* <div className='text-center font-bold text-blue-400 text-4xl mt-5'>This Is Our Develop software Components 😃</div> */}
       <h3 className='text-2xl text-center text-white font-[500] lg:-mt-20'>How We Develop <span className='text-[#00D0FF] custom-drop-shadow'>Software</span></h3>
       <div className='w-[5rem] h-[6px] rounded-md bg-[#3F83F8] mx-auto mt-2'></div>
       <div className='flex lg:justify-around items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
-        <div>
-          <h3 className='text-[4rem] text-white'>Requirement</h3>
-          <p className='text-[#9CA3AF] text-[20px] font-[500]'>Gather and document project requirements.</p>
-        </div>
+        {softwareCardData?.map((card)=><><div>
+          <h3 className='text-[4rem] text-white'>{card.title}</h3>
+          <p className='text-[#9CA3AF] text-[14px] font-[500] w-[350px]'>{card.description}</p>
+        </div></>)}
         {/* ====develop softare image div===== */}
         <div>
-          {/* ====correct and best pactise for defined image source path===== */}
-          {/* <div className='w-[100px] h-[100px] p-5 border-[#00D0FF] border-2 custom-drop-software-develop-section transition duration-300 rounded-lg bg-[#1F323B] flex justify-center items-center hover:cursor-pointer'>
-          <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-1.png" className='w-[90%]' alt="software develop png image" />
-            </div> */}
-          {/* <div className='w-[100px] h-[100px] p-5 border-[#00D0FF] border-2 custom-drop-software-develop-section transition duration-300 rounded-lg bg-[#1F323B] flex justify-center items-center hover:cursor-pointer transform hover:scale-110'>
-            <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-1.png" className='w-[90%]' alt="software develop png image" />
-          </div> */}
 
-          <div className="grid grid-cols-3 gap-24">
-            {cardData.map((card) => (
-              <div className='w-[100px] h-[100px] p-5 border-[#00D0FF] border-2 custom-drop-software-develop-section transition duration-300 rounded-lg bg-[#1F323B] flex flex-col justify-center items-center hover:cursor-pointer transform hover:scale-110'>
-                <img src={card.imageUrl} className='w-full pt-5' alt="software develop png image" />
-                <p className='relative top-10 text-white'>{card.title}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-3 gap-24 mb-28">
+            {/* ====card-1===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Requirement')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-1.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Requirement</p>
+            </div>
+
+            {/* ====card-2===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Analysis')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-2.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Analysis</p>
+            </div>
+
+            {/* ====card-3===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Design')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-3.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Design</p>
+            </div>
+
+            {/* ====card-4===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Coding')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-4.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Coding</p>
+            </div>
+
+            {/* ====card-5===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Testing')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-5.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Testing</p>
+            </div>
+
+            {/* ====card-6===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Development')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-6.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Development</p>
+            </div>
+
+            {/* ====card-7===== */}
+            <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Maintenance')}>
+              <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-7.png" className='w-full pt-5' alt="software develop png image" />
+              <p className='relative top-10 text-white'>Maintenance</p>
+            </div>
+
+
           </div>
 
         </div>
@@ -118,5 +151,3 @@ const DevelopSoftware = () => {
 }
 
 export default DevelopSoftware
-
-

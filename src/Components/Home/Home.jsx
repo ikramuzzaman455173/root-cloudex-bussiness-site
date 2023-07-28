@@ -6,7 +6,6 @@ import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
 const Home = () => {
   const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
-
   return (
     <div className='bg-[#020A1C] '>
       {/* ====add home backgound image===== */}

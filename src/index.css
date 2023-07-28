@@ -12,3 +12,7 @@ html{
 .footer-link{
   @apply flex items-center gap-2 my-4 text-[18px] text-[#0993C7] transition duration-300 hover:underline hover:decoration-[#6994DC] hover:decoration-solid hover:decoration-2 hover:underline-offset-8 hover:cursor-pointer
 }
+
+.software-card-style{
+  @apply w-[100px] h-[100px] p-5 border-[#00D0FF] border-2  transition duration-300 rounded-lg bg-[#1F323B] flex flex-col justify-center items-center hover:cursor-pointer transform hover:scale-110
+}
