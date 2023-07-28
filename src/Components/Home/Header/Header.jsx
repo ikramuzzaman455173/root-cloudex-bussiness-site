@@ -4,7 +4,7 @@ import AnimatonHeader from '../../../../public/headerAnimation.json'
 import Lottie from 'lottie-react'
 const Header = () => {
   return (
-    <div className=''>
+    <>
       {/* ====header div-1===== */}
 
       <div className="flex lg:flex-row md:flex-col flex-col lg:justify-center items-center relative lg:-top-[9rem] md:-top-[2rem]">
@@ -29,7 +29,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

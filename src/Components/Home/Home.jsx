@@ -2,12 +2,13 @@ import React from 'react'
 import Header from './Header/Header'
 import Container from '../SharedComponents/Container'
 import Background from '../SharedComponents/Button/Backgound'
+import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
 const Home = () => {
   const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
 
   return (
-    <>
+    <div className='bg-[#020A1C] '>
       {/* ====add home backgound image===== */}
 {/*
     <div className="w-full absolute bg-center bg-cover h-screen m-auto py-16 px-4 top-0 group" style={{ backgroundImage: `${bgUrl}`, transition: 'background-image 0.5s ease-in-out', }} >
@@ -22,10 +23,11 @@ const Home = () => {
       {/* <Backgound src={"/../src/assets/Images/BackgoundImages/about-bg.jpg"} /> */}
       <div className='z-20 relative my-[12rem]'>
         <Container>
-        <Header />
+          <Header />
+          <DevelopSoftware/>
         </Container>
       </div>
-    </>
+    </div>
   )
 }
 export default Home

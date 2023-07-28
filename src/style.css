@@ -10,3 +10,12 @@ html{
   scroll-behavior:smooth;
   overflow-x:hidden;
 }
+/* CSS Class Name: custom-drop-shadow */
+.custom-drop-shadow {
+  color: #00d0ff;
+  filter: drop-shadow(0 0 10px rgb(0, 183, 255));
+}
+.custom-drop-software-develop-section {
+  color: #00d0ff;
+  filter: drop-shadow(0 0 5px rgb(0, 183, 255));
+}
