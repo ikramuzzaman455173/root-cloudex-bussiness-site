@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import SectionTitle from '../SharedComponents/SectionTitle';
 
 const DevelopSoftware = () => {
   const cardData = [
@@ -87,7 +88,7 @@ const DevelopSoftware = () => {
     <div className='bg-[#020A1C] bg-center bg-cover w-full relative h-[100%] bg-[url("https://www.thebrightfuture.co/static/media/RqBg.f5971d63dd1776f5318e.png")]'>
       <div className='bg-[#080F28] opacity-[0.7] absolute'></div>
       {/* <div className='text-center font-bold text-blue-400 text-4xl mt-5'>This Is Our Develop software Components 😃</div> */}
-      <h3 className='text-2xl text-center text-white font-[500] lg:-mt-20'>How We Develop <span className='text-[#00D0FF] custom-drop-shadow'>Software</span></h3>
+      <SectionTitle title={"How We Develop"} info={"Software"} />
       <div className='w-[5rem] h-[6px] rounded-md bg-[#3F83F8] mx-auto mt-2'></div>
       <div className='flex lg:justify-around items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
