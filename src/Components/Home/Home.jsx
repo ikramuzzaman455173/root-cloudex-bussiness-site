@@ -1,8 +1,9 @@
 import React from 'react'
-import Header from './Header/Header'
-import Container from '../SharedComponents/Container'
-import Background from '../SharedComponents/Button/Backgound'
 import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
+import ServiceProvider from '../ServiceProvider/ServiceProvider'
+import Background from '../SharedComponents/Button/Backgound'
+import Container from '../SharedComponents/Container'
+import Header from './Header/Header'
 const Home = () => {
   const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
@@ -23,7 +24,8 @@ const Home = () => {
       <div className='z-20 relative my-[12rem]'>
         <Container>
           <Header />
-          <DevelopSoftware/>
+          <DevelopSoftware />
+          <ServiceProvider />
         </Container>
       </div>
     </div>

@@ -99,7 +99,7 @@ const DevelopSoftware = () => {
         {/* ====develop softare image div===== */}
         <div>
 
-          <div className="grid grid-cols-3 gap-24 mb-28">
+          <div className="grid grid-cols-3 gap-24 mb-24">
             {/* ====card-1===== */}
             <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Requirement')}>
               <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-1.png" className='w-full pt-5' alt="software develop png image" />
