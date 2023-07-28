@@ -16,3 +16,7 @@ html{
 .software-card-style{
   @apply w-[100px] h-[100px] p-5 border-[#00D0FF] border-2  transition duration-300 rounded-lg bg-[#1F323B] flex flex-col justify-center items-center hover:cursor-pointer transform hover:scale-110
 }
+
+.our-misson-title-style{
+  @apply flex justify-start gap-4 items-center mt-10 bg-transparent transition duration-300 hover:bg-[#1B1F34] p-2 mr-4 rounded-md cursor-pointer
+}

@@ -89,7 +89,6 @@ const DevelopSoftware = () => {
       <div className='bg-[#080F28] opacity-[0.7] absolute'></div>
       {/* <div className='text-center font-bold text-blue-400 text-4xl mt-5'>This Is Our Develop software Components 😃</div> */}
       <SectionTitle title={"How We Develop"} info={"Software"} />
-      <div className='w-[5rem] h-[6px] rounded-md bg-[#3F83F8] mx-auto mt-2'></div>
       <div className='flex lg:justify-around items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
         {softwareCardData?.map((card)=><><div>

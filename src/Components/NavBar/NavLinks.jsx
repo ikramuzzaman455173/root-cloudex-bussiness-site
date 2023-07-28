@@ -5,6 +5,7 @@ const NavLinks = ({ open }) => {
     { name: "About Us", link: "/about" },
     { name: "Project", link: "/Project" },
     { name: "Service", link: "/Service" },
+    { name: "Our Products", link: "/products" },
   ];
   return (
     <>
