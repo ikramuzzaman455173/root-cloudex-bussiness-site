@@ -63,3 +63,30 @@ html{
   clip-path: polygon(0px 0px, 89% 0px, 100% 100%, 100% 100%, 0px 100%, 0px 100%);
   border-bottom: none;
 }
+
+
+/* Custom dots styles */
+.custom-dots {
+  bottom: 20px;
+}
+
+.custom-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.custom-dots li button {
+  width: 20rem;
+  height: 8px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.custom-dots li.slick-active button {
+  background-color: #1E6DFF;
+  /* opacity: 1; */
+}

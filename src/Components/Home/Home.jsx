@@ -8,6 +8,7 @@ import OurProject from '../OurProject/OurProject'
 import OurMisson from '../OurMisson/OurMisson'
 import OureTechnology from '../OureTechnology/OureTechnology'
 import OurVission from '../OurVission/OurVission'
+import OurTeam from '../OurTeam/OurTeam'
 const Home = () => {
   const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
@@ -33,7 +34,8 @@ const Home = () => {
           <OurProject />
           <OurMisson />
           <OureTechnology />
-          <OurVission/>
+          <OurVission />
+          <OurTeam/>
         </Container>
       </div>
     </div>
