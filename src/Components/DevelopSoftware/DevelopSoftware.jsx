@@ -86,16 +86,18 @@ const DevelopSoftware = () => {
 
   return (
     <>
-      <SectionTitle title={"How We Develop"} info={"Software"} />
-      <div className='flex lg:justify-around items-center my-[3rem] lg:gap-20 mt-[6rem]'>
+      <div className='lg:mt-20 md:-mt-10'>
+      <SectionTitle title={"How We Develop "} info={"Software"} />
+      </div>
+      <div className='flex lg:justify-around lg:flex-row md:flex-col flex-col  items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
-        {softwareCardData?.map((card)=><><div>
-          <h3 className='text-[4rem] text-white'>{card.title}</h3>
-          <p className='text-[#9CA3AF] text-[14px] font-[500] w-[350px]'>{card.description}</p>
+        {softwareCardData?.map((card)=><><div className='lg:mt-0 md:-mt-12 -mt-16'>
+          <h3 className='lg:text-[4rem] md:text-[3rem] text-[2rem] text-white lg:text-left text-center'>{card.title}</h3>
+          <p className='text-[#9CA3AF] lg:text-[18px] md:text-[16px] text-[14px] font-[500] lg:w-[350px] md:w-[400px] w-[275px] lg:mb-0 md:mb-16 mb-16 text-center'>{card.description}</p>
         </div></>)}
         {/* ====develop softare image div===== */}
         <div>
-          <div className="grid grid-cols-3 gap-24 mb-24">
+          <div className="grid grid-cols-3 lg:gap-20 md:gap-16 gap-14">
             {/* ====card-1===== */}
             <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Requirement')}>
               <img src="/src/assets/Images/softwareDevelopSectionImg/softwareImg-1.png" className='w-full pt-5' alt="software develop png image" />
