@@ -31,3 +31,7 @@ html{
 .technology-badge-button{
   @apply bg-[#2A4892] text-white  p-2 text-[17px] relative  rounded
 }
+
+/* .bg-color{
+  @apply  from-[#090d18] via-[#0f002f]
+} */

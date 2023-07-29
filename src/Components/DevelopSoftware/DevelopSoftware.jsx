@@ -85,9 +85,7 @@ const DevelopSoftware = () => {
   }, [selectTab])
 
   return (
-    <div className='bg-[#020A1C] bg-center bg-cover w-full relative h-[100%] bg-[url("https://www.thebrightfuture.co/static/media/RqBg.f5971d63dd1776f5318e.png")]'>
-      <div className='bg-[#080F28] opacity-[0.7] absolute'></div>
-      {/* <div className='text-center font-bold text-blue-400 text-4xl mt-5'>This Is Our Develop software Components 😃</div> */}
+    <>
       <SectionTitle title={"How We Develop"} info={"Software"} />
       <div className='flex lg:justify-around items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
@@ -97,7 +95,6 @@ const DevelopSoftware = () => {
         </div></>)}
         {/* ====develop softare image div===== */}
         <div>
-
           <div className="grid grid-cols-3 gap-24 mb-24">
             {/* ====card-1===== */}
             <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Requirement')}>
@@ -146,7 +143,7 @@ const DevelopSoftware = () => {
 
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
