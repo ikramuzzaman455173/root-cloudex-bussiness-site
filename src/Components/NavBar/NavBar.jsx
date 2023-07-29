@@ -27,7 +27,7 @@ const NavBar = () => {
         {/* logo section */}
         <Link to='/'>
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-            <img className='w-[12rem]' src="https://thebrightfuture.co/static/media/logo.44f52001f3cd1a27b78c.png" alt="site logo" />
+            <img className='w-[12rem]' src="/src/assets/Images/logo/For Website.png" alt="site logo" />
           </div>
         </Link>
         {/* Menu icon */}

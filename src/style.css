@@ -64,7 +64,6 @@ html{
   border-bottom: none;
 }
 
-
 /* Custom dots styles */
 .custom-dots {
   bottom: 20px;
@@ -90,3 +89,14 @@ html{
   background-color: #1E6DFF;
   /* opacity: 1; */
 }
+
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

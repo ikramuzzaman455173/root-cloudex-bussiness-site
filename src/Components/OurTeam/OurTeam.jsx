@@ -5,8 +5,8 @@ import TeamCard from './TeamCard'
 const OurTeam = () => {
   return (
     <>
-      <div className='my-40'>
-        <SectionTitle title={"Our "} info={"Team"}/>
+      <div className='mt-40 mb-16'>
+        <SectionTitle title={"Meet Our "} info={"Team"}/>
       </div>
       {/* Team members */}
       <TeamCard/>
