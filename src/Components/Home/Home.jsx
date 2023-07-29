@@ -7,6 +7,7 @@ import Header from './Header/Header'
 import OurProject from '../OurProject/OurProject'
 import OurMisson from '../OurMisson/OurMisson'
 import OureTechnology from '../OureTechnology/OureTechnology'
+import OurVission from '../OurVission/OurVission'
 const Home = () => {
   const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
@@ -31,7 +32,8 @@ const Home = () => {
           <ServiceProvider />
           <OurProject />
           <OurMisson />
-          <OureTechnology/>
+          <OureTechnology />
+          <OurVission/>
         </Container>
       </div>
     </div>

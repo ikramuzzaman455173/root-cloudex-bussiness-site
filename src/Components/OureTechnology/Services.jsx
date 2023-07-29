@@ -164,9 +164,7 @@ const Services = () => {
 export default Services
 
 
-
-
-
+//todo:reused
                 {/* ====right card start===== */}
                 {/* <div className="mt-6 sm:mt-0 sm:mb-12">
                   <div className="flex items-center flex-col sm:flex-row">
@@ -190,4 +188,3 @@ export default Services
 
                   </div>
                 </div> */}
-
