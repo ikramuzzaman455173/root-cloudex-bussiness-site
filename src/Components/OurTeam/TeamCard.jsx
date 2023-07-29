@@ -6,7 +6,6 @@ import 'swiper/css/pagination';
 import { FaLinkedinIn } from 'react-icons/fa';
 // import required modules
 import { Pagination } from 'swiper/modules';
-import SectionTitle from '../SharedComponents/SectionTitle';
 const TeamCard = () => {
   const teamMember = [
     {
