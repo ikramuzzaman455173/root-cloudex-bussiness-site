@@ -25,28 +25,28 @@ const OurProject = () => {
 
   return (
     <>
-      <div className='relative mt-40 mb-20'>
+      <div className='relative lg:mt-40 md:mt-24 mt-28 mb-20 md:mb-16 lg:mb-20'>
         <SectionTitle title={"our "} info={"Projects"} />
       </div>
       <ul id="cards">
         {cards.map(card => (
           <li key={card.id} className="card w-[100%] h-[100px] group transform hover:skew-110" id={`card${card.id}`}>
             <div className="card-body border-2 border-[#008CFF] bg-[#121923] rounded-xl">
-              <div className='flex justify-between items-center gap-10'>
-                <img src={card.image} className='w-[300px] h-[200px] border-0 rounded-md' alt={card.title} />
+              <div className='flex lg:flex-row lg:justify-between justify-center flex-col items-center gap-10'>
+                <img src={card.image} className='lg:w-[300px] lg:h-[200px] w-full h-full border-0 rounded-md' alt={card.title} />
                 <div>
-                  <h2 className='text-[#008CFF] text-3xl font-[500]'>{card.title}</h2>
-                  <p className='text-[#86888A] text-[17px] mt-4'>{card.description}</p>
+                  <h2 className='text-[#008CFF] lg:text-3xl md:text-2xl text-xl font-[500]'>{card.title}</h2>
+                  <p className='text-[#86888A] lg:text-[17px] text-[15px] mt-4'>{card.description}</p>
                 </div>
               </div>
-              <div className='flex justify-end items-center'>
+              <div className='flex justify-end items-center lg:mt-0 mt-5'>
               <button className='py-[8px] px-[12px] text-[16px] font-[500] bg-[#0d83e4bb] transition duration-300 hover:bg-[#007BFF] text-white w-[120px] rounded-lg'>Details</button>
               </div>
             </div>
           </li>
         ))}
       </ul>
-      <div className='pt-32'>
+      <div className='lg:pt-32 md:pt-[450px] pt-[400px]'>
       <button className="flex items-center justify-center mx-auto py-[8px] px-[20px] transition duration-300 opacity-[0.5] font-semibold tracking-wide rounded-md text-[#007BFF] hover:text-[#61B9FA] border-[1px] border-[#1a56db] hover:bg-[#0B2667]">See More</button>
       </div>
     </>

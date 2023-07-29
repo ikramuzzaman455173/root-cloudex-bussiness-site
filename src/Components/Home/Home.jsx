@@ -34,8 +34,8 @@ const Home = () => {
           <DevelopSoftware />
           <ServiceProvider />
           <OurProject />
-          <OurMisson />
           <OureTechnology />
+          <OurMisson />
           <OurVission />
           <OurTeam />
           <Testimonial />

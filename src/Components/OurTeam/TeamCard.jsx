@@ -1,11 +1,14 @@
-// Import Swiper React components
+
+
+
+import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { FaLinkedinIn } from 'react-icons/fa';
-// import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination,Autoplay } from 'swiper/modules';
+
+
 const TeamCard = () => {
   const teamMember = [
     {
@@ -45,40 +48,70 @@ const TeamCard = () => {
       image: 'https://www.thebrightfuture.co/static/media/nezamul.5c6c52af51018468f0c6.jpeg'
     },
   ]
+
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    // Update the number of slides per view based on screen size
+    const handleResize = () => {
+      if (window.innerWidth >= 992) {
+        setSlidesPerView(3); // Large screens and above
+      } else if (window.innerWidth >= 768) {
+        setSlidesPerView(2); // medium screen size
+      } else {
+        setSlidesPerView(1); // small screen size
+      }
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Call handleResize initially to set the initial value
+    handleResize();
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
+      ref={swiperRef}
+      slidesPerView={slidesPerView}
+      spaceBetween={30}
+      loop={false}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay, Pagination]}
+      className="mySwiper"
       >
-        {teamMember?.map((team, i) => (<SwiperSlide>
-          <div key={i} className="p-4 rounded-xl border-[#1E6DFF] border-[1px] bg-[#151A32] mx-4">
-            <div className="overflow-hidden rounded-lg">
-              <img
-                src={team.image}
-                className="w-full h-[250px] object-cover transition duration-300 transform hover:cursor-pointer hover:scale-[1.1]"
-                alt="team member image"
-              />
+        {teamMember?.map((team, i) => (
+          <SwiperSlide key={i}>
+            <div className="p-4 rounded-xl border-[#1E6DFF] border-[1px] bg-[#151A32] mx-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={team.image}
+                  className="w-full border-[3px] border-white h-[250px] object-cover transition duration-300 transform hover:cursor-pointer hover:scale-[1.1]"
+                  alt="team member image"
+                />
+              </div>
+              <div className="p-4 flex flex-col justify-center items-center">
+                <h3 className="text-2xl text-white font-[500]">{team.name}</h3>
+                <p className="text-[15px] text-[#1AC4D8]">{team.position}</p>
+                <p className="text-[16px] text-[#9CA3AF] lowercase">{team.email}</p>
+                <a href="https://www.linkedin.com/company/rootcloudex" target="_blank">
+                  <FaLinkedinIn className="text-4xl my-4 bg-[#1E6DFF] text-[#161B33] p-2 rounded-md" />
+                </a>
+              </div>
             </div>
-            <div className='p-4 flex flex-col justify-center items-center'>
-              <h3 className='text-2xl text-white font-[500]'>{team.name}</h3>
-              <p className='text-[15px] text-[#1AC4D8]'>{team.position}</p>
-              <p className='text-[16px] text-[#9CA3AF] lowercase'>{team.email}</p>
-              <a href="https://www.linkedin.com" target='_blank'>
-                <FaLinkedinIn className='text-4xl my-4 bg-[#1E6DFF] text-[#161B33] p-2 rounded-md' />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>))}
-
+          </SwiperSlide>
+        ))}
       </Swiper>
-
-      {/* </div> */}
     </>
   );
 };

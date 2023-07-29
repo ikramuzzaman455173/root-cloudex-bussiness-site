@@ -7,7 +7,7 @@ const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
     <>
-    <section className='flex items-center h-screen p-16'>
+    <section className='flex items-center h-screen p-16 bg-gradient-to-r from-[#090d18] to-[#0b0024]'>
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
         <FaceFrownIcon className='w-40 h-40 text-red-500' />
         <div className='max-w-md text-center'>

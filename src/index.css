@@ -28,10 +28,25 @@ html{
   @apply md:text-[15px] text-[13px] font-light md:text-left text-center group-hover:text-white md:group-hover:font-[500] group-hover:font-[300]
 }
 
-.technology-badge-button{
-  @apply bg-[#2A4892] text-white  p-2 text-[17px] relative  rounded
+.technology-badge-button-left{
+  @apply bg-[#2A4892] text-white  p-2 lg:text-[17px] md:text-[16px] text-[15px] relative lg:-left-[15rem] md:-left-[5rem]  rounded
+}
+.technology-badge-button-right{
+  @apply bg-[#2A4892] text-white  p-2 lg:text-[17px] md:text-[16px] text-[15px] relative  rounded lg:left-[5rem]  md:-right-[3rem]
 }
 
 /* .bg-color{
   @apply  from-[#090d18] via-[#0f002f]
 } */
+
+.left-card-technology{
+  @apply  flex flex-wrap lg:justify-start md:justify-start justify-center lg:w-[450px] md:w-[300px] gap-4 h-auto border-white border-[1px] rounded relative lg:right-[15rem] md:right-[5rem] bg-[#0E172D] p-5
+}
+
+.right-card-technology{
+  @apply flex flex-wrap lg:w-[450px] md:w-[350px] gap-4 h-auto border-white border-[1px] rounded relative lg:left-[5rem] md:left-[3rem] bg-[#0E172D] p-5
+}
+
+.mission-vission-title{
+  @apply lg:w-[445px] lg:h-[95px] md:w-full md:h-auto w-[350px] mx-auto text-[#92B7DB] lg:text-left text-justify
+}

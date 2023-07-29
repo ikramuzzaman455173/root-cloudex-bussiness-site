@@ -10,7 +10,7 @@ const MainLayout = () => {
     AOS.init();
   }, []);
   return (
-    <>
+    <div className='bg-gradient-to-r from-[#090d18] to-[#0b0024]'>
       <NavBar />
       <div className='min-h-[calc(100vh-140px)]'>
       <Outlet></Outlet>
@@ -19,7 +19,7 @@ const MainLayout = () => {
       <div className='relative z-[50]'>
       {/* <ParticleBg /> */}
       </div>
-    </>
+    </div>
   )
 }
 export default MainLayout

@@ -45,7 +45,6 @@ const DevelopSoftware = () => {
       description: "Provide ongoing maintenance and support for the system.",
       imageUrl: "/src/assets/Images/softwareDevelopSectionImg/softwareImg-7.png",
     },
-    // Add more objects here for additional cards
   ];
 
   const [selectTab, setSelectTab] = useState('Requirement')
