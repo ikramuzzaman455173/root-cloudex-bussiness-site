@@ -57,3 +57,9 @@ html{
 	padding-top: calc(var(--index) * var(--cardTopPadding));
   transition:all .3s ease-in-out;
 }
+
+/* *<===our technology card parts===>* */
+.shape-box{
+  clip-path: polygon(0px 0px, 89% 0px, 100% 100%, 100% 100%, 0px 100%, 0px 100%);
+  border-bottom: none;
+}

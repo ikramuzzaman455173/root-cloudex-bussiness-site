@@ -20,3 +20,14 @@ html{
 .our-misson-title-style{
   @apply flex justify-start gap-4 items-center mt-10 bg-transparent transition duration-300 hover:bg-[#1B1F34] p-2 mr-4 rounded-md cursor-pointer
 }
+
+.service-card{
+  @apply md:font-[700] font-[600] mb-3 group-hover:text-white group-hover:font-[600] md:text-xl text-[15px] text-center md:mt-0 mt-5
+}
+.service-card-p{
+  @apply md:text-[15px] text-[13px] font-light md:text-left text-center group-hover:text-white md:group-hover:font-[500] group-hover:font-[300]
+}
+
+.technology-badge-button{
+  @apply bg-[#2A4892] text-white  p-2 text-[17px] relative  rounded
+}
