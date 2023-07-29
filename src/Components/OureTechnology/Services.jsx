@@ -27,7 +27,7 @@ const Services = () => {
                           {/* ====frontend development part start===== */}
                           <div className='technology-badge-button-left shape-box'>front end development</div>
                           <div className='left-card-technology'>
-                            {frontednd?.map((item, i) => <div>
+                            {frontednd?.map((item, i) => <div key={i}>
                               <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="technology img" />
                             </div>)}
                           </div>
@@ -54,7 +54,7 @@ const Services = () => {
                           {/* ====frontend development part start===== */}
                           <div className='technology-badge-button-right shape-box '>back end development</div>
                           <div className='right-card-technology'>
-                            {backend?.map((item, i) => <div className=''>
+                            {backend?.map((item, i) => <div key={i}>
                               <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="" />
                             </div>)}
                           </div>
@@ -81,7 +81,7 @@ const Services = () => {
                           {/* ====frontend development part start===== */}
                           <div className='technology-badge-button-left  shape-box '>tools</div>
                           <div className='left-card-technology'>
-                            {tools?.map((item, i) => <div className=''>
+                            {tools?.map((item, i) => <div key={i}>
                               <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="" />
                             </div>)}
                           </div>
@@ -108,7 +108,7 @@ const Services = () => {
                           {/* ====frontend development part start===== */}
                           <div className='technology-badge-button-right shape-box '>app</div>
                           <div className='right-card-technology'>
-                            {app?.map((item, i) => <div className=''>
+                            {app?.map((item, i) => <div key={i}>
                               <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="" />
                             </div>)}
                           </div>
@@ -132,7 +132,7 @@ const Services = () => {
                           {/* ====frontend development part start===== */}
                           <div className='technology-badge-button-left shape-box '>payment</div>
                           <div className='left-card-technology'>
-                            {payment?.map((item, i) => <div className=''>
+                            {payment?.map((item, i) => <div key={i}>
                               <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="" />
                             </div>)}
                           </div>

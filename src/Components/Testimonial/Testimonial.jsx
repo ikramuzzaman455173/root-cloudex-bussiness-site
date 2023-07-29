@@ -75,9 +75,9 @@ const TeamCard = () => {
       >
         {testimonial?.map((item, i) => (
           <SwiperSlide key={i}>
-            <div class="w-[330px] h-[350px] rounded-xl p-4 bg-[#121E34] overflow-hidden flex justify-center mx-auto items-center flex-col relative">
+            <div className="w-[330px] h-[350px] rounded-xl p-4 bg-[#121E34] overflow-hidden flex justify-center mx-auto items-center flex-col relative">
 
-              <div class="bg-[#1795F0] w-[150px] rounded-full h-[150px] flex justify-end items-end p-8 text-white absolute left-[-70px] top-[-70px] qut"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-4xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg></div>
+              <div className="bg-[#1795F0] w-[150px] rounded-full h-[150px] flex justify-end items-end p-8 text-white absolute left-[-70px] top-[-70px] qut"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="text-4xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg></div>
 
               <div className='flex transform rotate-[90deg] absolute top-[65%] -left-7'>
                 <div className='bg-white w-[1.5rem] h-[5px]'></div>

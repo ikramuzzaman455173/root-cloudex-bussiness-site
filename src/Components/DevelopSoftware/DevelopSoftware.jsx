@@ -90,10 +90,10 @@ const DevelopSoftware = () => {
       </div>
       <div className='flex lg:justify-around lg:flex-row md:flex-col flex-col  items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
-        {softwareCardData?.map((card)=><><div className='lg:mt-0 md:-mt-12 -mt-16'>
+        {softwareCardData?.map((card,i)=><div key={i}><div  className='lg:mt-0 md:-mt-12 -mt-16'>
           <h3 className='lg:text-[4rem] md:text-[3rem] text-[2rem] text-white lg:text-left text-center'>{card.title}</h3>
           <p className='text-[#9CA3AF] lg:text-[18px] md:text-[16px] text-[14px] font-[500] lg:w-[350px] md:w-[400px] w-[275px] lg:mb-0 md:mb-16 mb-16 text-center'>{card.description}</p>
-        </div></>)}
+        </div></div>)}
         {/* ====develop softare image div===== */}
         <div>
           <div className="grid grid-cols-3 lg:gap-20 md:gap-16 gap-14">
