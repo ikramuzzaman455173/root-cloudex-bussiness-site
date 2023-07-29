@@ -6,46 +6,41 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { Pagination,Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 
 const TeamCard = () => {
   const teamMember = [
     {
-      name: "Mahadi Hasan",
+      name: "Rafeu Ahammed",
       position: 'Ceo And Founder',
-      email: 'info@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/mahadi.d26ec93f8e2568232b6e.jpg'
+      email: 'admin@rootcloudex.com.bd',
+      image: '/src/assets/Images/Team/ceo.webp'
     },
     {
       name: "Maruf Ali Khan",
       position: 'Managing Director',
       email: 'maruf@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/maruf.56a3403b65de5208767f.jpeg'
     },
     {
       name: "Foysal Ahmed",
       position: 'Project Manager',
       email: 'foysal@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/Foysal.83666e68d421a86e1ceb.png'
     },
     {
       name: "Regita Redhe",
       position: 'Account Manager',
       email: 'radhe@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/accountManager.26c9fd4ca8f0a13919db.jpeg'
     },
     {
       name: "Md. Abdur Rab",
       position: 'product designer',
       email: 'abdur@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/Abdur_rab_1.b5b86b3a60feecb16733.jpg'
     },
     {
       name: "Nazmul Hoque",
       position: 'product designer',
       email: 'nazmul@thebrightfuture.co',
-      image: 'https://www.thebrightfuture.co/static/media/nezamul.5c6c52af51018468f0c6.jpeg'
     },
   ]
 
@@ -79,23 +74,23 @@ const TeamCard = () => {
   return (
     <>
       <Swiper
-      ref={swiperRef}
-      slidesPerView={slidesPerView}
-      spaceBetween={30}
-      loop={false}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay, Pagination]}
-      className="mySwiper"
+        ref={swiperRef}
+        slidesPerView={slidesPerView}
+        spaceBetween={30}
+        loop={false}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
       >
         {teamMember?.map((team, i) => (
           <SwiperSlide key={i}>
             <div className="p-4 rounded-xl border-[#1E6DFF] border-[1px] bg-[#151A32] mx-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={team.image}
+                  src={team.image || '/src/assets/Images/placholder-img.avif'}
                   className="w-full border-[3px] border-white h-[250px] object-cover transition duration-300 transform hover:cursor-pointer hover:scale-[1.1]"
                   alt="team member image"
                 />

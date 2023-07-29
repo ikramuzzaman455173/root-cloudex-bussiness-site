@@ -4,7 +4,7 @@ import NavBar from '../Components/NavBar/NavBar'
 import Footer from '../Components/Footer/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import ParticleBg from '../Components/PagePartiCles/ParticleBG'
+import ParticleBg from '../Components/PagePartiCles/ParticleBG'
 const MainLayout = () => {
   useEffect(() => {
     AOS.init();
@@ -17,7 +17,7 @@ const MainLayout = () => {
       </div>
       <Footer />
       <div className='relative z-[50]'>
-      {/* <ParticleBg /> */}
+      <ParticleBg />
       </div>
     </div>
   )
