@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { BiCodeAlt } from "react-icons/bi";
 const Services = () => {
   //todo:service array
-  const frontednd = ['/src/assets/Images/Technology/frontend/frontend-1.png', '/src/assets/Images/Technology/frontend/frontend-2.png', '/src/assets/Images/Technology/frontend/frontend-3.png', '/src/assets/Images/Technology/frontend/frontend-4.png', '/src/assets/Images/Technology/frontend/frontend-5.png', '/src/assets/Images/Technology/frontend/frontend-6.png', '/src/assets/Images/Technology/frontend/frontend-7.png', '/src/assets/Images/Technology/frontend/frontend-8.png']
-  const backend = ['/src/assets/Images/Technology/backend/backend-1.png', '/src/assets/Images/Technology/backend/backend-2.png', '/src/assets/Images/Technology/backend/backend-3.png', '/src/assets/Images/Technology/backend/backend-4.png', '/src/assets/Images/Technology/backend/backend-5.png', '/src/assets/Images/Technology/backend/backend-6.png']
-  const tools = ['/src/assets/Images/Technology/tools/tools-1.png', '/src/assets/Images/Technology/tools/tools-2.png', '/src/assets/Images/Technology/tools/tools-3.png', '/src/assets/Images/Technology/tools/tools-4.png', '/src/assets/Images/Technology/tools/tools-5.png', '/src/assets/Images/Technology/tools/tools-6.png', '/src/assets/Images/Technology/tools/tools-7.png']
-  const app = ['/src/assets/Images/Technology/app/app-1.png', '/src/assets/Images/Technology/app/app-2.png']
-  const payment = ['/src/assets/Images/Technology/payment/payment-1.png', '/src/assets/Images/Technology/payment/payment-2.png']
+  const frontednd = ['./assets/Technology/frontend/frontend-1.png', './assets/Technology/frontend/frontend-2.png', './assets/Technology/frontend/frontend-3.png', './assets/Technology/frontend/frontend-4.png', './assets/Technology/frontend/frontend-5.png', './assets/Technology/frontend/frontend-6.png', './assets/Technology/frontend/frontend-7.png', './assets/Technology/frontend/frontend-8.png']
+  const backend = ['./assets/Technology/backend/backend-1.png', './assets/Technology/backend/backend-2.png', './assets/Technology/backend/backend-3.png', './assets/Technology/backend/backend-4.png', './assets/Technology/backend/backend-5.png', './assets/Technology/backend/backend-6.png']
+  const tools = ['./assets/Technology/tools/tools-1.png', './assets/Technology/tools/tools-2.png', './assets/Technology/tools/tools-3.png', './assets/Technology/tools/tools-4.png', './assets/Technology/tools/tools-5.png', './assets/Technology/tools/tools-6.png', './assets/Technology/tools/tools-7.png']
+  const app = ['./assets/Technology/app/app-1.png', './assets/Technology/app/app-2.png']
+  const payment = ['./assets/Technology/payment/payment-1.png', './assets/Technology/payment/payment-2.png']
 
   return (
     <>
@@ -55,7 +55,7 @@ const Services = () => {
                           <div className='technology-badge-button-right shape-box '>back end development</div>
                           <div className='right-card-technology'>
                             {backend?.map((item, i) => <div key={i}>
-                              <img src={item} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="" />
+                              <img src={item||'./assets/placholder-img.avif'} className='w-[50px] h-[50px] border-[1px] border-[#0084FF] p-2 rounded-md' alt="img" />
                             </div>)}
                           </div>
                         </div>

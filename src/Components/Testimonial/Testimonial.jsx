@@ -1,31 +1,31 @@
 
-import { useState, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect, useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination,Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionTitle from '../SharedComponents/SectionTitle';
 const TeamCard = () => {
   const testimonial = [
     {
       name: 'Maa Internet Service Provider',
       info: "Perfect solution for our business. Root Cloudex is invaluable!",
-      image: '/src/assets/Images/company/company-1.jpg',
+      image: './assets/company/company-1.jpg',
     },
     {
       name: 'Mridha Trading',
       info: "Amazing experience with Root Cloudex!",
-      image: '/src/assets/Images/company/company-2.jpg',
+      image: './assets/company/company-2.jpg',
     },
     {
       name: 'M / S First Collection',
       info: "Kudos to Root Cloudex! Excellent service!",
-      image: '/src/assets/Images/company/company-3.jpg',
+      image: './assets/company/company-3.jpg',
     },
     {
       name: 'Yousuf Enterprise',
       info: "Fantastic experience with Root Cloudex's support.",
-      image: '/src/assets/Images/company/company-4.jpg',
+      image: './assets/company/company-4.jpg',
     },
   ];
 

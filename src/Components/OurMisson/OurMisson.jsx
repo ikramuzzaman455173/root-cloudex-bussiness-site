@@ -12,40 +12,40 @@ const OurMisson = () => {
         <div>
           <p className='mission-vission-title'>Driving Innovation, Delivering Exceptional Experiences: Bright Future empowers businesses with cutting-edge software solutions, fostering collaboration and making a positive impact on society.</p>
 
-          <div className='flex flex-col  lg:justify-start lg:items-start justify-center items-center'>
+          <div className='flex lg:flex-row  flex-col  lg:justify-start lg:items-start justify-center items-center'>
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Innovative Software Solutions</p>
           </div>
 
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Exceptional User Experiences</p>
           </div>
           </div>
 
 
-          <div className='flex lg:justify-start lg:items-start justify-center items-center flex-col'>
+          <div className='flex lg:flex-row lg:justify-start lg:items-start justify-center items-center flex-col'>
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Collaborative Partnerships</p>
           </div>
 
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Continuous Innovation and Adaptation</p>
           </div>
           </div>
 
 
-          <div className='flex lg:justify-start lg:items-start justify-center items-center flex-col'>
+          <div className='flex lg:flex-row lg:justify-start lg:items-start justify-center items-center flex-col'>
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Social Impact through Technology</p>
           </div>
 
           <div className='our-misson-title-style group'>
-            <img src="/src/assets/Images/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
+              <img src="./assets/our-misson-icon.png" className='w-[38px] h-[38px] border-[1px] border-[#007BFF] rounded-md' alt="our misson icon png" />
             <p className='w-[200px] h-[47px] text-[#acacac]'>Customer Satisfaction and Success</p>
           </div>
           </div>

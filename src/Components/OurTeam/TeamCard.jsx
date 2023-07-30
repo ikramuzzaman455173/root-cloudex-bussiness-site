@@ -1,12 +1,12 @@
 
 
 
-import { useState, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect, useRef, useState } from 'react';
+import { FaLinkedinIn } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 const TeamCard = () => {
@@ -15,7 +15,7 @@ const TeamCard = () => {
       name: "Rafeu Ahammed",
       position: 'Ceo And Founder',
       email: 'admin@rootcloudex.com.bd',
-      image: '/src/assets/Images/Team/ceo.webp'
+      image: './assets/Team/ceo.webp'
     },
     {
       name: "Maruf Ali Khan",
@@ -90,7 +90,7 @@ const TeamCard = () => {
             <div className="p-4 rounded-xl border-[#1E6DFF] border-[1px] bg-[#151A32] mx-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={team.image || '/src/assets/Images/placholder-img.avif'}
+                  src={team.image || './assets/placholder-img.avif'}
                   className="w-full border-[3px] border-white h-[250px] object-cover transition duration-300 transform hover:cursor-pointer hover:scale-[1.1]"
                   alt="team member image"
                 />

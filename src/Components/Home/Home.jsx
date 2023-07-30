@@ -1,16 +1,15 @@
 import React from 'react'
-import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
-import ServiceProvider from '../ServiceProvider/ServiceProvider'
-import Background from '../SharedComponents/Button/Backgound'
-import Container from '../SharedComponents/Container'
-import Header from './Header/Header'
-import OurProject from '../OurProject/OurProject'
-import OurMisson from '../OurMisson/OurMisson'
-import OureTechnology from '../OureTechnology/OureTechnology'
-import OurVission from '../OurVission/OurVission'
-import OurTeam from '../OurTeam/OurTeam'
-import Testimonial from '../Testimonial/Testimonial'
 import ContactForm from '../ContactForm/ContactForm'
+import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
+import OurMisson from '../OurMisson/OurMisson'
+import OurProject from '../OurProject/OurProject'
+import OurTeam from '../OurTeam/OurTeam'
+import OurVission from '../OurVission/OurVission'
+import OureTechnology from '../OureTechnology/OureTechnology'
+import ServiceProvider from '../ServiceProvider/ServiceProvider'
+import Container from '../SharedComponents/Container'
+import Testimonial from '../Testimonial/Testimonial'
+import Header from './Header/Header'
 const Home = () => {
   // const imageUrlSmall = "https://thebrightfuture.co/static/media/5512626.aabffe4a0c9b9f638ffb.jpg";
   // const imageUrlLarge = "https://thebrightfuture.co/static/media/header.afc603ccc144602a1277.png";
@@ -27,18 +26,18 @@ const Home = () => {
       <div className='md:hidden'>
       <Background  src={imageUrlSmall} />
       </div> */}
-      {/* <Backgound src={"/../src/assets/Images/BackgoundImages/about-bg.jpg"} /> */}
+      {/* <Backgound src={"/.../assets/BackgoundImages/about-bg.jpg"} /> */}
       <div className='z-20 relative my-20'>
         <Container>
-          <Header />
-          <DevelopSoftware />
-          <ServiceProvider />
-          <OurProject />
-          <OureTechnology />
-          <OurMisson />
-          <OurVission />
-          <OurTeam />
-          <Testimonial />
+          <Header/>
+          <DevelopSoftware/>
+          <ServiceProvider/>
+          <OurProject/>
+          <OureTechnology/>
+          <OurMisson/>
+          <OurVission/>
+          <OurTeam/>
+          <Testimonial/>
           <ContactForm/>
         </Container>
       </div>

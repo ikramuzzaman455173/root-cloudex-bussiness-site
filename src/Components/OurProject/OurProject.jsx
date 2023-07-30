@@ -1,23 +1,23 @@
-import React from 'react'
-import SectionTitle from '../SharedComponents/SectionTitle'
+import React from 'react';
+import SectionTitle from '../SharedComponents/SectionTitle';
 
 const OurProject = () => {
   const cards = [
     {
       id: 1,
-      image: 'https://raw.githubusercontent.com/Bright-Futute/MamunAssets/main/MokeupImage/book-house.png',
+      image: "./assets/placholder-img.avif",
       title: 'Book House (Book selling platform)',
       description: "Each one will work with a different type of data, the user cannot use the seller's or seller admin's data. No one can place any order without login in. Admin can make any seller an admin if he wants and Add a payment system.'",
     },
     {
       id: 2,
-      image: 'https://raw.githubusercontent.com/Bright-Futute/MamunAssets/main/MokeupImage/ema-jhon.png',
+      image: "./assets/placholder-img.avif",
       title: 'Ema-Jhon (Shopping Platform)',
       description: "Here a user can come and order the product. But for that he must have a register and login user. Whatever the user buys will be stored in his local storage. Pagination is used here. Through which product sorting can be done user",
     },
     {
       id: 3,
-      image: 'https://raw.githubusercontent.com/Bright-Futute/MamunAssets/main/MokeupImage/doctors-portal.png',
+      image: "./assets/placholder-img.avif",
       title: 'Doctors-Portal',
       description: "All site data is taken from MongoDB & Added Photo ReactAnyone with a login can provide some boy information data. Added authorization system to site. Added Photo React. Data sorting has been done so that the data does not become random.",
     },

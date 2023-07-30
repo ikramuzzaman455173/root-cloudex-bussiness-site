@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import NavLinks from './NavLinks';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import NavButtonClose from '../SharedComponents/Button/NavButtonClose';
 import NavButtonBar from '../SharedComponents/Button/NavButtonBar';
+import NavButtonClose from '../SharedComponents/Button/NavButtonClose';
+import NavLinks from './NavLinks';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -39,7 +39,7 @@ const NavBar = () => {
         {/* logo section */}
         <Link to='/'>
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-            <img className='w-[12rem]' src="/src/assets/Images/logo/For Website.png" alt="site logo" />
+            <img className='w-[12rem]' src="./assets/logo/For Website.png" alt="site logo" />
           </div>
         </Link>
         {/* Menu icon */}

@@ -15,7 +15,7 @@ const Footer = () => {
                 <a href="#">
                   <img
                     className="lg:w-[10rem] w-[15rem]"
-                    src="/src/assets/Images/logo/For Website.png"
+                    src="./assets/logo/For Website.png"
                     alt="site logo"
                   />
                 </a>
