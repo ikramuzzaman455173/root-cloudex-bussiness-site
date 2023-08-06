@@ -16,32 +16,7 @@ const TeamCard = () => {
       position: 'Ceo And Founder',
       email: 'admin@rootcloudex.com.bd',
       image: './assets/Team/ceo.webp'
-    },
-    {
-      name: "Maruf Ali Khan",
-      position: 'Managing Director',
-      email: 'maruf@thebrightfuture.co',
-    },
-    {
-      name: "Foysal Ahmed",
-      position: 'Project Manager',
-      email: 'foysal@thebrightfuture.co',
-    },
-    {
-      name: "Regita Redhe",
-      position: 'Account Manager',
-      email: 'radhe@thebrightfuture.co',
-    },
-    {
-      name: "Md. Abdur Rab",
-      position: 'product designer',
-      email: 'abdur@thebrightfuture.co',
-    },
-    {
-      name: "Nazmul Hoque",
-      position: 'product designer',
-      email: 'nazmul@thebrightfuture.co',
-    },
+    }
   ]
 
   const [slidesPerView, setSlidesPerView] = useState(3);

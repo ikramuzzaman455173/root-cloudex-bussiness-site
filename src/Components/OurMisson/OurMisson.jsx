@@ -10,7 +10,7 @@ const OurMisson = () => {
       <div className='flex lg:flex-row flex-col-reverse items-center justify-center gap-20 mt-16'>
         {/* ====our misson div-1===== */}
         <div>
-          <p className='mission-vission-title'>Driving Innovation, Delivering Exceptional Experiences: Bright Future empowers businesses with cutting-edge software solutions, fostering collaboration and making a positive impact on society.</p>
+          <p className='mission-vission-title'>Driving Innovation, Delivering Exceptional Experiences: Root Cloudex empowers businesses with cutting-edge software solutions, fostering collaboration and making a positive impact on society.</p>
 
           <div className='flex lg:flex-row  flex-col  lg:justify-start lg:items-start justify-center items-center'>
           <div className='our-misson-title-style group'>
@@ -54,7 +54,7 @@ const OurMisson = () => {
         </div>
         {/* ====our misson div-2===== */}
         <div className=''>
-          <img src="https://www.thebrightfuture.co/static/media/vector(mission).348f6fc0aac443ef4554.png" className='w-[300px] h-[380px]' alt="our misson img" />
+          <img src="./assets/mission.png" className='w-[300px] h-[380px]' alt="our misson img" />
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ const NavLinks = ({ open,handleNavLinkClick }) => {
     { name: "Home", link: "/" },
     { name: "Project", link: "/Project" },
     { name: "Service", link: "/Service" },
-    { name: "Our Products", link: "/products" },
+    { name: "Products", link: "/product" },
     { name: "About", link: "/about" },
   ];
   return (

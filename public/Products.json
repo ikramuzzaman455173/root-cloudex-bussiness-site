@@ -1,0 +1,56 @@
+[
+  {
+    "pName":"Computer Mobile Shop/Pos Software",
+    "pType":"Accounting",
+    "price":20000,
+    "desc":"A short product description here",
+    "rating":4,
+    "option":"Hot",
+    "pImg":"https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyJTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+  },
+  {
+    "pName":"School management software",
+    "pType":"Accounting",
+    "price":30000,
+    "desc":"A short product description here",
+    "rating":5,
+    "option":"Hot",
+    "pImg":"https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2Nob29sJTIwbWFuYWdlbWVudCUyMHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60"
+  },
+  {
+    "pName":"Hospital management software",
+    "pType":"Accounting",
+    "price":40000,
+    "desc":"A short product description here",
+    "rating":5,
+    "option":"Sale",
+    "pImg":"https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEhvc3BpdGFsJTIwbWFuYWdlbWVudCUyMHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60"
+  },
+  {
+    "pName":"Computer Mobile Shop/Pos Software",
+    "pType":"Accounting",
+    "price":20000,
+    "desc":"A short product description here",
+    "rating":4,
+    "option":"Hot",
+    "pImg":"https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyJTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+  },
+  {
+    "pName":"Pharmacy management software",
+    "pType":"Accounting",
+    "price":25000,
+    "desc":"A short product description here",
+    "rating":4,
+    "option":"Sale",
+    "pImg":"https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGhhcm1hY3klMjBtYW5hZ2VtZW50JTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+  },
+  {
+    "pName":"Computer Mobile Shop/Pos Software",
+    "pType":"Accounting",
+    "price":20000,
+    "desc":"A short product description here",
+    "rating":4,
+    "option":"Hot",
+    "pImg":"https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyJTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+  }
+]

@@ -54,7 +54,7 @@ const OurVission = () => {
         </div>
         {/* ====our misson div-2===== */}
         <div>
-          <img src="https://www.thebrightfuture.co/static/media/vector(vission).905c59aa72f1f49efce3.png" className='w-[300px] h-[380px]' alt="our misson img" />
+          <img src="./assets/vission.png" className='w-[300px] h-[380px]' alt="our misson img" />
         </div>
       </div>
     </>

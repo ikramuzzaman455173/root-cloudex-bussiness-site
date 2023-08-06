@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
@@ -38,9 +38,9 @@ const Footer = () => {
                     <p>Linked In</p>
                   </a>
 
-                  <a href="https://www.twitter.com" target="_blank" className="flex items-center gap-2 my-4 text-[18px] text-[#6994DC]">
-                    <FaTwitter />
-                    <p>Twitter</p>
+                  <a href="tel:+8801742057743" target="_blank" className="flex items-center gap-2 my-4 text-[18px] text-[#6994DC]">
+                    <FaPhone />
+                    <p>Phone</p>
                   </a>
 
                   <a href="https://api.whatsapp.com/send?phone=8801742057743&text=I%20am%20contracted%20with%20your%20website.%20I%20need%20your%20services." target="_blank" className="flex items-center gap-2 my-4 text-[18px] text-[#2EAB80]">
@@ -54,39 +54,36 @@ const Footer = () => {
                 <div>
                   <h3 className="footer-heading">Our Services</h3>
                   <a className="footer-link">
-                    <p>Web Apps</p>
+                    <p>Digital Marketing</p>
                   </a>
 
                   <a className="footer-link">
-                    <p>ECommerce</p>
+                    <p>Domain</p>
                   </a>
 
                   <a className="footer-link">
-                    <p>Mobile Apps</p>
+                    <p>Hosting</p>
                   </a>
 
                   <a className="footer-link">
-                    <p>Entertainment</p>
+                    <p>Seo</p>
                   </a>
 
-                  <a className="footer-link">
-                    <p>Portfolio</p>
-                  </a>
                 </div>
                 {/* ====our product div===== */}
                 <div>
                   <h3 className="footer-heading">Our Product</h3>
                   <a className="footer-link">
-                    <p>Polytactnic Reselt Api</p>
+                    <p>POS Software</p>
                   </a>
                   <a className="footer-link">
-                    <p>POS</p>
+                    <p>ERP Software</p>
                   </a>
                   <a className="footer-link">
-                    <p>Resume Builder</p>
+                    <p>CRM Software</p>
                   </a>
                   <a className="footer-link">
-                    <p>Portfolio Builder</p>
+                    <p>HRM Software</p>
                   </a>
                 </div>
               </div>
