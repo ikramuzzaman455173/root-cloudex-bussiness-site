@@ -3,13 +3,13 @@ import SectionTitle from '../SharedComponents/SectionTitle'
 
 const OurMisson = () => {
   return (
-    <>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <div className='lg:mt-[170px] mt-[90px]'>
       <SectionTitle title="Our " info="Mission"/>
       </div>
       <div className='flex lg:flex-row flex-col-reverse items-center justify-center gap-20 mt-16'>
         {/* ====our misson div-1===== */}
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1500">
           <p className='mission-vission-title'>Driving Innovation, Delivering Exceptional Experiences: Root Cloudex empowers businesses with cutting-edge software solutions, fostering collaboration and making a positive impact on society.</p>
 
           <div className='flex lg:flex-row  flex-col  lg:justify-start lg:items-start justify-center items-center'>
@@ -53,11 +53,11 @@ const OurMisson = () => {
 
         </div>
         {/* ====our misson div-2===== */}
-        <div className=''>
-          <img src="./assets/mission.png" className='w-[300px] h-[380px]' alt="our misson img" />
+        <div>
+          <img src="./assets/mission.png" data-aos="fade-left" data-aos-duration="1500" className='w-[300px] h-[380px]' alt="our misson img" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

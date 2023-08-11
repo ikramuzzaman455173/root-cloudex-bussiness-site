@@ -56,14 +56,14 @@ const Products = () => {
   ]
   return (
     <>
-      <div className="pt-[9rem]">
+      <div className="pt-[9rem]" data-aos="fade-up" data-aos-duration="1000">
         <div className='lg:pt-20 md:pb-10 pb-10'>
           <SectionTitle title="Our Awesome " info="Products" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:mx-5 mx-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:mx-5 mx-5" data-aos="fade-up" data-aos-duration="1500">
           {/* Product  */}
 
-          {products?.map((item, i) => <div key={i} className="w-full rounded-md shadow-md border-2 border-[#0084FF] p-5 flex lg:flex-row md:flex-col flex-col mb-8 lg:justify-between md:justify-center justify-start items-center ">
+          {products?.map((item, i) => <div data-aos="fade-up" data-aos-duration="2000" key={i} className="w-full rounded-md shadow-md border-2 border-[#0084FF] p-5 flex lg:flex-row md:flex-col flex-col mb-8 lg:justify-between md:justify-center justify-start items-center ">
             <div className="p-3 bg-[#0D1A36] rounded-md custom-drop-product-section">
               <img src={item.pImg} alt="product img" className="object-cover object-center lg:w-[450px] md:w-[1050px] sm:w-[768px] w-full rounded-t-md h-72 rounded-md" />
             </div>

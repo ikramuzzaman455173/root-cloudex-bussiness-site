@@ -8,7 +8,7 @@ const ServiceCard = ({ item }) => {
   };
   return (
     <>
-      <div className="w-full rounded-md shadow-md border-2 border-[#0084FF] p-2 my-auto custom-drop-software-develop-section">
+      <div className="w-full rounded-md shadow-md border-2 border-[#0084FF] p-2 my-auto custom-drop-software-develop-section" data-aos="fade-up" data-aos-duration="2000">
         <div className="p-3 bg-[#0D1A36] rounded-md">
           <img src={item.Image} alt="" className="object-cover object-center w-full rounded-t-md h-72 rounded-md" />
           <div className="flex md:flex-row md:flex-wrap flex-col justify-between p-6 space-y-8 z-[60]">

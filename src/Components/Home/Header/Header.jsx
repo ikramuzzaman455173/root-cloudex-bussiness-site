@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       {/* ====header div-1===== */}
-      <div className="flex lg:flex-row md:flex-col flex-col lg:justify-center items-center relative lg:top-0 md:top-20 top-20">
+      <div className="flex lg:flex-row md:flex-col flex-col lg:justify-center items-center relative lg:top-0 md:top-20 top-20"  data-aos="fade-right" data-aos-duration="1500">
         <div className='lg:text-left md:text-center text-center relative'>
           <p className='text-white lg:text-[18px] md:text-[16px] text-[14px]  fw-[700]'>YOU HAVE THE <span className='text-[#FFA500]'>IDEA</span></p>
           <h3 className='lg:text-[2.5rem] md:text-[2rem] text-[1.3rem] lg:font-[700] md:font-[500] font-[500] text-white'>WE HAVE THE <span className='text-[#FFA500]'>TECHNOLOGY</span></h3>
@@ -25,8 +25,8 @@ const Header = () => {
         {/* ====header div-2===== */}
         {/* Lottie Animation */}
         <div className='relative lg:top-0 md:-top-24 -top-16'>
-          <div className='md:w-[550px] md:h-[550px] sm:w-[450px] sm:h-[450px] w-[350px] h-[350px]'>
-            <Lottie animationData={AnimatonHeader} loop={true} />
+          <div className='md:w-[550px] md:h-[550px] sm:w-[450px] sm:h-[450px] w-[350px] h-[350px]' data-aos="zoom-out" data-aos-duration="1500">
+            <Lottie animationData={AnimatonHeader} loop={true}/>
           </div>
         </div>
       </div>
@@ -35,3 +35,7 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+

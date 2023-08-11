@@ -84,19 +84,19 @@ const DevelopSoftware = () => {
   }, [selectTab])
 
   return (
-    <>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <div className='lg:mt-20 md:-mt-10'>
       <SectionTitle title={"How We Develop "} info={"Software"} />
       </div>
       <div className='flex lg:justify-around lg:flex-row md:flex-col flex-col  items-center my-[3rem] lg:gap-20 mt-[6rem]'>
         {/* ====develop softare image data div===== */}
-        {softwareCardData?.map((card,i)=><div key={i}><div  className='lg:mt-0 md:-mt-12 -mt-16'>
+        {softwareCardData?.map((card,i)=><div data-aos="fade-right" data-aos-duration="1500" key={i}><div  className='lg:mt-0 md:-mt-12 -mt-16'>
           <h3 className='lg:text-[4rem] md:text-[3rem] text-[2rem] text-white lg:text-left text-center'>{card.title}</h3>
           <p className='text-[#9CA3AF] lg:text-[18px] md:text-[16px] text-[14px] font-[500] lg:w-[350px] md:w-[400px] w-[275px] lg:mb-0 md:mb-16 mb-16 text-center'>{card.description}</p>
         </div></div>)}
         {/* ====develop softare image div===== */}
         <div>
-          <div className="grid grid-cols-3 lg:gap-20 md:gap-16 gap-14">
+          <div className="grid grid-cols-3 lg:gap-20 md:gap-16 gap-14" data-aos="fade-left" data-aos-duration="2000">
             {/* ====card-1===== */}
             <div className='software-card-style custom-drop-software-develop-section' onClick={() => setSelectTab('Requirement')}>
               <img src="./assets/softwareDevelopSectionImg/softwareImg-1.png" className='w-full pt-5' alt="software develop png image" />
@@ -144,7 +144,7 @@ const DevelopSoftware = () => {
 
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

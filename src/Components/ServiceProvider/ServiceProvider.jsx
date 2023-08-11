@@ -24,15 +24,15 @@ const ServiceProvider = () => {
   ];
 
   return (
-    <>
+    <div data-aos="fade-up" data-aos-duration="1000">
       {/* Gradient overlay */}
       {/* SectionTitle component */}
-        <div className="relative lg:mt-[15rem] md:mt-[10rem] mt-[7rem]"><SectionTitle title={"Services We "} info={"Provide"} /></div>
+        <div className="relative lg:mt-[15rem] md:mt-[10rem] mt-[7rem]" data-aos="fade-up" data-aos-duration="1500"><SectionTitle title={"Services We "} info={"Provide"} /></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-24 mx-5 ">
           {/* ====card part start===== */}
           {serviceCard?.map((item) => <ServiceCard key={item.id} item={item} />)}
         </div>
-    </>
+    </div>
   );
 };
 

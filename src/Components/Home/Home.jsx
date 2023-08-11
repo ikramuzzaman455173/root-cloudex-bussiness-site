@@ -10,7 +10,6 @@ import Container from '../SharedComponents/Container'
 import Testimonial from '../Testimonial/Testimonial'
 import Header from './Header/Header'
 import Products from '../Products/Products'
-import PageLoader from '../SharedComponents/PageLoader'
 const Home = () => {
   return (
     <div className='bg-gradient-to-r from-[#090d18] to-[#0b0024]'>
@@ -27,10 +26,6 @@ const Home = () => {
           <Testimonial/>
           <ContactForm/>
         </Container>
-
-        <div className="my-10">
-          <PageLoader/>
-        </div>
       </div>
     </div>
   )

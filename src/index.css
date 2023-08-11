@@ -54,3 +54,11 @@ html{
 .awesome-btn{
   @apply bg-gradient-to-r from-purple-600 to-blue-400  hover:from-pink-600 hover:to-orange-400 text-white font-semibold tracking-wider
 }
+
+.tech-icon{
+  @apply rounded-full border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform lg:-translate-x-[-.9rem] md:-translate-x-[.2rem]  -translate-x-1/2 lg:-translate-y-[1rem] -translate-y-4 sm:translate-y-0 lg:flex md:flex hidden items-center justify-center
+}
+
+.teach-bar-icon-style{
+  @apply text-white font-[500] lg:text-4xl md:text-3xl text-2xl
+}

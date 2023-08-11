@@ -16,7 +16,7 @@ const Services = () => {
             <div className="w-full py-3 sm:max-w-xl sm:mx-auto sm:px-0">
               <div className="relative text-color antialiased text-sm font-semibold">
                 {/* ====vertical line running through the middle===== */}
-                <div className="absolute w-1 lg:block md:block hidden rounded-md bg-white h-full left-1/2 transform -translate-x-1/2"></div>
+                <div className="absolute w-1 lg:block md:block hidden rounded-md bg-white h-full lg:left-[58%] md:left-[55%]  left-1/2 transform -translate-x-1/2"></div>
 
                 {/* ====left card start===== */}
                 <div className="sm:mt-0 sm:mb-12">
@@ -35,9 +35,9 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-full bg-primaryColor border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0  items-center justify-center lg:flex md:flex hidden">
+                    <div className="tech-icon bg-primaryColor">
                       <figure>
-                        <BiCodeAlt className='text-white font-[500] text-2xl' />
+                        <BiCodeAlt className='teach-bar-icon-style' />
                       </figure>
                     </div>
                   </div>
@@ -62,9 +62,9 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-full bg-primaryColor border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 lg:flex md:flex hidden items-center justify-center">
+                    <div className="tech-icon bg-primaryColor">
                       <figure>
-                        <BiCodeAlt className='text-white font-[500] text-2xl' />
+                        <BiCodeAlt className='teach-bar-icon-style' />
                       </figure>
                     </div>
                   </div>
@@ -89,9 +89,9 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-full bg-primaryColor border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 lg:flex md:flex hidden items-center justify-center">
+                    <div className="tech-icon bg-primaryColor">
                       <figure>
-                        <BiCodeAlt className='text-white font-[500] text-2xl' />
+                        <BiCodeAlt className='teach-bar-icon-style' />
                       </figure>
                     </div>
                   </div>
@@ -116,9 +116,9 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-full bg-primaryColor border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 lg:flex md:flex hidden items-center justify-center">
+                    <div className="tech-icon bg-primaryColor">
                       <figure>
-                        <BiCodeAlt className='text-white font-[500] text-2xl' />
+                        <BiCodeAlt className='teach-bar-icon-style' />
                       </figure>
                     </div>
                   </div>
@@ -140,9 +140,9 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <div className="rounded-full bg-primaryColor border-4 w-16 h-16 bg-[#0084FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 lg:flex md:flex hidden items-center justify-center">
+                    <div className="tech-icon bg-primaryColor">
                       <figure>
-                        <BiCodeAlt className='text-white font-[500] text-2xl' />
+                        <BiCodeAlt className='teach-bar-icon-style' />
                       </figure>
                     </div>
                   </div>
@@ -160,5 +160,4 @@ const Services = () => {
 }
 
 export default Services
-
 

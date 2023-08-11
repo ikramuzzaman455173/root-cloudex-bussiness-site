@@ -3,11 +3,11 @@ import SectionTitle from "../SharedComponents/SectionTitle"
 
 const ContactForm = () => {
   return (
-    <>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <div className="lg:mt-40 lg:mb-10 mt-20 mb-10">
       <SectionTitle title={"Want to talk about "} info={"your project?"} />
       </div>
-      <section id='ContactForm' className='pb-16'>
+      <section id='ContactForm' className='pb-16' data-aos="fade-up" data-aos-duration="1500">
       <h2 className=' capitalize md:font-[700] font-[600] md:text-[34px] text-[28px] md:mb-8 mb-4 text-center text-white pb-5'> get in touch</h2>
         <div className="md:flex justify-between gap-6 border-2 shadow-md items-center p-5 rounded-md">
           <div className="w-full md:w-1/2 h-[350px] sm:h-[450px] g-map border-[#1E6DFF] border-[1px] p-2 rounded-lg custom-drop-software-develop-section">
@@ -39,7 +39,7 @@ const ContactForm = () => {
 
         </div>
     </section>
-    </>
+    </div>
   )
 }
 export default ContactForm

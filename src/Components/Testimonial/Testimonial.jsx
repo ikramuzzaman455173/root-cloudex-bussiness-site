@@ -57,7 +57,7 @@ const TeamCard = () => {
   }, []);
 
   return (
-    <>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <div className='lg:mt-40 lg:mb-20 mt-20 mb-20'>
           <SectionTitle title={"Our Client "} info={"Says"} />
         </div>
@@ -97,7 +97,7 @@ const TeamCard = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

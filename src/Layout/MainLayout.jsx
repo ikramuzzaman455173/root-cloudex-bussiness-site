@@ -11,14 +11,14 @@ const MainLayout = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    // Simulate an asynchronous operation
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, [])
+  // useEffect(() => {
+  //   // Simulate an asynchronous operation
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 3000);
+  // }, [])
   return (
     <div className='bg-gradient-to-r from-[#090d18] to-[#0b0024]'>
       {isLoading ? <PageLoader /> : <>
