@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from '../ContactForm/ContactForm'
 import DevelopSoftware from '../DevelopSoftware/DevelopSoftware'
 import OurMisson from '../OurMisson/OurMisson'
-import OurTeam from '../OurTeam/OurTeam'
+// import OurTeam from '../OurTeam/OurTeam'
 import OurVission from '../OurVission/OurVission'
 import OureTechnology from '../OureTechnology/OureTechnology'
 import ServiceProvider from '../ServiceProvider/ServiceProvider'
@@ -22,7 +22,7 @@ const Home = () => {
           <OureTechnology/>
           <OurMisson/>
           <OurVission/>
-          <OurTeam/>
+          {/* <OurTeam/> */}
           <Testimonial/>
           <ContactForm/>
         </Container>
