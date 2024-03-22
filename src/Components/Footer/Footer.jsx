@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
@@ -15,13 +15,19 @@ const Footer = () => {
                 <a href="#">
                   <img
                     className="lg:w-[10rem] w-[15rem]"
-                    src="./assets/logo/For Website.png"
+                    src="./assets/logo/toppers-media.png"
                     alt="site logo"
                   />
                 </a>
+
                 <p className="w-[350px] text-white pt-4 lg:pb-0 pb-10">
-                  Root Cloudex  is a Website Development & Software Development Company in Dhaka, Bangladesh transformed as specialized digital interactive organization.
+                  Toppers Media is a Website Development & Software Development Company located in Dhaka, Bangladesh. We specialize in transforming businesses into dynamic digital interactive organizations.
                 </p>
+
+                <p className="w-[350px]  pt-4 lg:pb-0 pb-10 text-white">
+                  <b className="text-[#2EAB80]">location:</b> Ayesha monjil, maijdee, Noakhali, bangladesh
+                </p>
+
               </div>
 
               {/* ====social media div===== */}
@@ -43,7 +49,12 @@ const Footer = () => {
                     <p>Phone</p>
                   </a>
 
-                  <a href="https://api.whatsapp.com/send?phone=8801742057743&text=I%20am%20contracted%20with%20your%20website.%20I%20need%20your%20services." target="_blank" className="flex items-center gap-2 my-4 text-[18px] text-[#2EAB80]">
+                  <a href="mailto:business@toppersmedia.com" target="_blank" class="flex items-center gap-2 my-4 text-[18px] text-[#6994DC]">
+                    <FaEnvelope />
+                    <p>Email</p>
+                  </a>
+
+                  <a href="https://api.whatsapp.com/send?phone=01630946931&text=I%20am%20contracted%20with%20your%20website.%20I%20need%20your%20services." target="_blank" className="flex items-center gap-2 my-4 text-[18px] text-[#2EAB80]">
                     <FaWhatsapp />
                     <p>Whatsapp</p>
                   </a>
@@ -91,7 +102,7 @@ const Footer = () => {
             {/* ====footer end part===== */}
           </div>
         </div>
-        <div className="border-t-[1px] border-border-c flex justify-center items-center p-2 text-white bg-gradient-to-r from-[#090d18] to-[#0b0024]">© Copyright <span className="font-[500] pl-2 custom-drop-software-develop-section">Root Cloudex</span>. All rights reserved.</div>
+        <div className="border-t-[1px] border-border-c flex justify-center items-center p-2 text-white bg-gradient-to-r from-[#090d18] to-[#0b0024]">© Copyright <span className="font-[500] pl-2 custom-drop-software-develop-section">Toppers Media</span>. All rights reserved.</div>
       </footer>
       {/* <!-- End Five Columns Footer with Logo --> */}
     </>

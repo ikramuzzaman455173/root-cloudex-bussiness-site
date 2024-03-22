@@ -42,7 +42,7 @@ const NavBar = () => {
         {/* logo section */}
         <Link to='/'>
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-            <img className='w-[12rem]' src="./assets/logo/For Website.png" alt="site logo" />
+            <img className='w-[8rem]' src="./assets/logo/toppers-media.png" alt="site logo" />
           </div>
         </Link>
         {/* Menu icon */}
